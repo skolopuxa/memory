@@ -23,6 +23,10 @@ header {
     padding: 20px 15px;
 }
 
+.count {
+    font-family:'Franklin Gothic Medium', sans-serif ;
+}
+
 h1 {
     text-align: center;
     color: coral;
@@ -75,6 +79,11 @@ footer {
 .card-show {
     transform: rotateY(180deg);
 }
+
+.card-finish img {
+    filter: grayscale(100%);
+}
+
 .container {
     display: grid;
     grid-template-columns: repeat(4, 250px);
@@ -86,3 +95,29 @@ footer {
 .copy-text {
 color: coral;
 }
+
+
+:root {
+    --bg-color: white ;
+    --text-color: coral;
+    --color-theme: light;
+}
+
+@media(prefers-color-scheme: dark){
+    :root {
+    --bg-color: coral;
+    --text-color:  coral;
+    --color-theme: dark;
+}
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+.post {
+    border: 1px solid var(--text-color);
+}
+
+
